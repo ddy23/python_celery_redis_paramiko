@@ -1,4 +1,4 @@
-FROM eduardoshanahan/python:2.7.13.5
+FROM python/python:2.7.15
 
 
 RUN apk update
