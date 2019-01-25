@@ -17,6 +17,7 @@ openssl-dev \
 && pip install paramiko \
 && pip install redis \
 && pip install celery \
+&& pip install flower \
 && apk del .install_dependencies_paramiko
 
 ENTRYPOINT celery -A tasks worker --loglevel=info
