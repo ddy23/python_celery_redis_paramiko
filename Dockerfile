@@ -15,6 +15,8 @@ libssl1.0 \
 openssl-dev \
 && pip install cffi \
 && pip install paramiko \
+&& pip install redis \
+&& pip install celery \
 && apk del .install_dependencies_paramiko
 
 ENTRYPOINT celery -A tasks worker --loglevel=info
