@@ -1,4 +1,4 @@
-FROM python/python:2.7.15
+FROM python:2.7.15
 
 
 RUN apk update
